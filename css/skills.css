@@ -1,0 +1,77 @@
+
+.habilidades{
+    width: 300px;
+    margin: auto;
+    /*border: 1px solid #ccc;*/
+    padding: 10px;
+    
+    justify-content: center;
+    align-content: center;
+    
+}
+.contenedor {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 30px ;
+    border: 1px solid black
+}
+.skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.html{
+    background-color: #04aa6d;
+    border-radius: 100px;
+    animation: barra-html 2s forwards;
+}
+
+.css{
+    background-color: #2196F3;
+    animation: barra-css 2s forwards;
+    border-radius: 30px;
+}
+
+.javascript{
+    background-color: #21f3f3;
+    animation: barra-javascript 2s forwards;
+    border-radius: 30px;
+}
+
+.sql{
+    background-color: #e3303f;
+    animation: barra-sql 2s forwards;
+    border-radius: 30px;
+}
+
+@keyframes barra-html {
+    0%{
+        width: 0;
+    }100%{
+        width: 90%;
+    }
+}
+@keyframes barra-css {
+    0%{
+        width: 0;
+    }100%{
+        width: 70%;
+    }
+}
+
+@keyframes barra-javascript {
+    0%{
+        width: 0;
+    }100%{
+        width: 50%;
+    }
+}
+
+@keyframes barra-sql {
+    0%{
+        width: 0;
+    }100%{
+        width: 80%;
+    }
+}

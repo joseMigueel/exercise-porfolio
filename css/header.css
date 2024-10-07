@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.barra {
+.header {
     position:sticky;
     padding: 10px;
     opacity: 100;
