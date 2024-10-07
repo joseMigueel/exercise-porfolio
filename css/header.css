@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.barra {
+    position:sticky;
+    padding: 10px;
+    opacity: 100;
+    .imagen {
+        width: 20%;
+        min-width: 100px;
+        max-width: 150px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
