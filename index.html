@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/body.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
                 <li><a href="#Habilidades">Habilidades</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
                 <li><a href="#Contacto">Contacto</a></li>
+
             </ul>
         </nav>
     </header>
@@ -69,8 +71,26 @@
                 required
                 >
             </div>
-            <div>
-                <button></button>
+            <fieldset class="radio-check">
+                <div>
+                    <legend><strong>¿Como me conociste?</strong></legend>
+                    <label for="origen">Keepcoding
+                    <input type="radio" name="origen" value="Keepcoding" >
+                    </label>
+                    <label for="origen">Colegio
+                    <input type="radio" name="origen" value="Colegio" >
+                    </label>
+                    <label for="origen">Github
+                    <input type="radio" name="origen" value="Github" >
+                    </label>
+                    <label for="origen">Otros
+                    <input type="radio" name="origen" value="Otros" >
+                    </label>
+                </div>
+            </fieldset>
+            <div class="elemento">
+                <label for="bio"><strong>Mas información</strong></label>
+                <textarea name="userbio" id="bio" rows="10" maxlength="250" placeholder="Que mas quieres saber"></textarea>
             </div>
         </form>
     </main>
