@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>Document</title>
 </head>
 <body>
@@ -44,30 +45,34 @@
             <div class="skills sql">80%</div>
         </div>
     </div>
-
-    <form action="">
-        <div class="form"> 
-            <label for="name">Nombre</label>
-            <input type="name" id="name" placeholder="Pon tu nombre" required>
-        </div>
-        <div class="form">
-            <label for="surname">Apellidos</label>
-            <input type="surname" id="surname" placeholder="Pon tus apellidos" required >
-        </div>
-        <div class="form">
-            <label for="">Telefono</label>
-            <input type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format (123-123-1234)" placeholder="Pon tu télefono">
-        </div>
-        <div class="form">
-            <label for="github-username">Github username</label>
-            <input type="text" 
-            id="github-username" 
-            name="github-username" 
-            placeholder="Con este formato (@<username>) "
-            pattern="^[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,37}[a-zA-Z0-9])?$"
-            required
-            >
-        </div>
-    </form>
+    <main class="cuadrado">
+        <form action="">
+            <div class="form"> 
+                <label for="name"><strong>Nombre</strong></label>
+                <input type="name" id="name" placeholder="Pon tu nombre" required>
+            </div>
+            <div class="form">
+                <label for="surname"><strong>Apellidos</strong></label>
+                <input type="surname" id="surname" placeholder="Pon tus apellidos" required >
+            </div>
+            <div class="form">
+                <label for=""><strong>Telefono</strong></label>
+                <input type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format (123-123-1234)" placeholder="Pon tu télefono">
+            </div>
+            <div class="form">
+                <label for="github-username"><strong>Github username</strong></label>
+                <input type="text" 
+                id="github-username" 
+                name="github-username" 
+                placeholder="Con este formato (@<username>) "
+                pattern="^[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,37}[a-zA-Z0-9])?$"
+                required
+                >
+            </div>
+            <div>
+                <button></button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

@@ -1,0 +1,57 @@
+
+.cuadrado{
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+    margin-right: 300px;
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 12px 0;
+    }
+}
+
+form .form{
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+    
+}
+
+form label{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+.form input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    
+}
+
+@media(max-width: 584px){
+    .cuadrado{
+        padding-top: 50px;
+        max-width: 100%;
+    }
+    form .form{
+        
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .cuadrado form{
+        max-height: 400px;
+    }
+}
+
+
