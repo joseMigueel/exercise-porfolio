@@ -1,7 +1,73 @@
-body{
+/*body{
     justify-content: center;
     align-items: center;
     width: 800px;
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    min-height: 140vh;
+    padding-bottom: 80px;
+    footer{
+        bottom: 0;
+    }
+}
+*/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    width: 99%;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .navegador {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagen {
+        width: 120px; /* Ajuste del logo en pantallas más pequeñas */
+        margin-bottom: 10px;
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Ajuste de las habilidades para que se vean mejor en móviles */
+    .habilidades {
+        padding: 10px;
+    }
+
+    .skills {
+        text-align: left;
+        padding-left: 10px;
+    }
+    /* Estilos para el formulario en móvil */
+    .form {
+        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    /* Ajuste de los botones */
+    .boton, .boton-reset {
+        width: 100%;
+        padding: 15px;
+    }
 }
