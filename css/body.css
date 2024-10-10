@@ -102,7 +102,7 @@ main {
     background-color: white;
 }
 
-/* Show menu when checkbox is checked */
+
 #menu-toggle:checked + .hamburger + .lista {
     display: flex;
     position: absolute;
@@ -114,7 +114,7 @@ main {
     z-index: 1;
 }
 
-/* Hide checkbox element visually */
+
 #menu-toggle {
     display: none;
 }
