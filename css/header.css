@@ -30,9 +30,8 @@ nav {
     }
 }*/
 
-
-
 .header {
+    width: 100%;
     background-color: #333;
     color: white;
     padding: 10px;
@@ -44,7 +43,7 @@ nav {
     align-items: center;
 }
 .imagen {
-    width: 150px; /* Ajustar el tamaño del logo */
+    width: 150px;
 }
 
 .lista {
@@ -59,10 +58,10 @@ nav {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Transición suave */
+    transition: color 0.3s ease;
 }
 
 .lista li a:hover {
-    color: aqua; /* Color al hacer hover */
+    color: aqua;
 }
 

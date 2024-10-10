@@ -1,30 +1,18 @@
-/*body{
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    margin: 0 auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative;
-    min-height: 140vh;
-    padding-bottom: 80px;
-    footer{
-        bottom: 0;
-    }
-}
-*/
 * {
     box-sizing: border-box;
 }
+
 html, body {
-    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(243 244 246);
     margin: 0;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
-    width: 99%;
+    width: 100%;
 }
 
 .todo {
     display: flex;
+    width: 100%;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -33,41 +21,156 @@ main {
     flex: 1;
 }
 
-@media (max-width: 768px) {
-    .navegador {
-        flex-direction: column;
-        align-items: flex-start;
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-size: cover;
+    background-image: url("https://www.freedigitalphotos.net/images/img/homepage/87357.jpg");
+}
+
+.enlace {
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.habilidades {
+    padding: 10px;
+}
+
+.skills {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.form {
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.lista {
+    display: none;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked + .hamburger + .lista {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 10px;
+    z-index: 1;
+}
+
+/* Hide checkbox element visually */
+#menu-toggle {
+    display: none;
+}
+
+.lista li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.imagen {
+    width: 120px;
+}
+
+@media (min-width: 768px) {
+    .todo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .imagen {
-        width: 120px; /* Ajuste del logo en pantallas más pequeñas */
-        margin-bottom: 10px;
+    .contenido {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+    .navegador {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
     }
 
     .lista {
-        flex-direction: column;
+        display: flex;
+        margin-top: 0px;
+        flex-direction: row;
         gap: 10px;
+        margin-left: auto;
     }
 
-    /* Ajuste de las habilidades para que se vean mejor en móviles */
-    .habilidades {
-        padding: 10px;
+    .imagen {
+        width: 120px;
+        margin-bottom: 10px;
     }
 
-    .skills {
-        text-align: left;
-        padding-left: 10px;
-    }
-    /* Estilos para el formulario en móvil */
-    .form {
-        margin-bottom: 15px;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    /* Ajuste de los botones */
-    .boton, .boton-reset {
-        width: 100%;
-        padding: 15px;
+    .container-img {
+        background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/tips-stock-image-acceptance/jcr%3Acontent/main-pars/image_733509258/tips-stock-acceptance_1.jpg.img.jpg");
     }
 }

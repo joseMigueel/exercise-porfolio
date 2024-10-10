@@ -1,100 +1,129 @@
-
-.cuadrado{
+.cuadrado {
     display: flex;
-    height: 30vh;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-top: 150px;
-    width: 100%;
-    margin-right: 300px;
-    form{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 10px 12px 0;
-    }
+    justify-content: center;
+    padding: 50px 10px;
+    max-width: 100%;
 }
 
-form .form{
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 12px 0;
+}
+
+form .form {
     margin-bottom: 15px;
-    width: calc(100%/2 - 20px);
-    
+    width: 100%;
 }
 
-form label{
-    display:block;
+form label {
+    display: block;
     font-weight: 500;
     margin-bottom: 5px;
-    
+    font-size: 1rem;
 }
 
-.form input{
+.form input {
     height: 40px;
     width: 100%;
     outline: none;
     border-radius: 9px;
     border: 1px solid #ccc;
     padding-left: 15px;
-    
 }
 
-.radio-check{
+.radio-check {
     margin: 0;
     padding: 0;
     border: none;
-    legend{
-        padding-bottom: 15px;
-        text-align: center;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    }
-    label{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-textarea{
-    width: 800px;
+.radio-check legend {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.radio-check label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.botones {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.boton {
+    padding: 10px 60px;
+    border-radius: 8px;
+}
+
+.btm-enviar {
+    background-color: aqua;
+    border: none;
+}
+
+.btm-reset {
+    background-color: transparent;
+    border: 1px solid aqua;
+}
+
+textarea {
+    width: 100%;
     height: 150px;
     overflow: auto;
     resize: none;
     margin-top: 15px;
     padding: 10px;
-    
 }
 
-.elemento label{
-    margin-top: 10px;
+.elemento label {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
 }
 
-@media(max-width: 584px){
-    .cuadrado{
-        padding-top: 50px;
-        max-width: 100%;
+.elemento {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .cuadrado {
+        padding-top: 10px;
+        max-width: 80%;
     }
-    form .form{
-        
+
+    form .form {
         margin-bottom: 15px;
+        width: calc(100%/2 - 20px);
+    }
+
+    form legend {
+        display: flex;
+        justify-content: flex-start;
         width: 100%;
     }
-    .cuadrado form{
-        max-height: 400px;
-    }
-    .radio-check{
-        flex-direction: column;
-        align-items: flex-start;
-        ;
-    }
-    legend{
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-    label{
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-    
-}
 
+    .respuestas {
+        display: flex;
+        gap: 30px;
+    }
+
+    .radio-check {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .radio-check div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

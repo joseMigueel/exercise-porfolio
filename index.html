@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,93 +15,134 @@
     <header class="header">
         <nav class="navegador">
             <img class="imagen" src="imagenes/codeflix.png">
+            <input type="checkbox" id="menu-toggle">
+            <label class="hamburger" for="menu-toggle">
+                Menú
+            </label>
             <ul class="lista">
-                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <!--
-    <section>
-        <div class="">
+
+    <div class="contenido">
+        <section class="habilidades">
             <h2>Sobre mi</h2>
-            <p>muchas cosas sobre mi que me gustaria contar</p>
-        </div>
-    </section>-->
-    <div class="habilidades">
-        <h2>Mis Habilidades</h2>
-        <p>HTML</p>
-        <div class="contenedor">
-            <div class="skills html">90%</div>
-        </div>
-        <p>CSS</p>
-        <div class="contenedor">
-            <div class="skills css">70%</div>
-        </div>
-        <p>JAVASCRIPT</p>
-        <div class="contenedor">
-            <div class="skills javascript">50%</div>
-        </div>
-        <p>SQL</p>
-        <div class="contenedor">
-            <div class="skills sql">80%</div>
-        </div>
-    </div>
-    <main class="cuadrado">
-        <form action="">
-            <div class="form"> 
-                <label for="name"><strong>Nombre</strong></label>
-                <input type="name" id="name" placeholder="Pon tu nombre" required>
+            <p>
+                muchas cosas sobre mi que me gustaria contar asdf muchas cosas sobre mi que me gustaria contar
+                muchas cosas sobre mi que me gustaria contar
+            </p>
+        </section>
+
+        <div class="habilidades" id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <div class="skills-columns">
+                <div class="skill-item">
+                    <p>HTML</p>
+                    <div class="contenedor">
+                        <div class="skills html">90%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>CSS</p>
+                    <div class="contenedor">
+                        <div class="skills css">70%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>JAVASCRIPT</p>
+                    <div class="contenedor">
+                        <div class="skills javascript">50%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>SQL</p>
+                    <div class="contenedor">
+                        <div class="skills sql">80%</div>
+                    </div>
+                </div>
             </div>
-            <div class="form">
-                <label for="surname"><strong>Apellidos</strong></label>
-                <input type="surname" id="surname" placeholder="Pon tus apellidos" required >
-            </div>
-            <div class="form">
-                <label for=""><strong>Telefono</strong></label>
-                <input type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format (123-123-1234)" placeholder="Pon tu télefono">
-            </div>
-            <div class="form">
-                <label for="github-username"><strong>Github username</strong></label>
-                <input type="text" 
-                id="github-username" 
-                name="github-username" 
-                placeholder="Con este formato (@<username>) "
-                pattern="^[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,37}[a-zA-Z0-9])?$"
-                required
-                >
-            </div>
-            <fieldset class="radio-check">
-                <div>
-                    <legend><strong>¿Como me conociste?</strong></legend>
-                    <label for="origen">Keepcoding
-                    <input type="radio" name="origen" value="Keepcoding" >
-                    </label>
-                    <label for="origen">Colegio
-                    <input type="radio" name="origen" value="Colegio" >
-                    </label>
-                    <label for="origen">Github
-                    <input type="radio" name="origen" value="Github" >
-                    </label>
-                    <label for="origen">Otros
-                    <input type="radio" name="origen" value="Otros" >
+        </div>
+
+        <div class="container-img">
+            <a href="https://google.es" target="_blank" class="enlace">Enviado</a>
+        </div>
+
+        <main class="cuadrado" id="contacto">
+            <form action="" >
+                <div class="form">
+                    <label for="name"><strong>Nombre</strong></label>
+                    <input type="name" id="name" placeholder="Pon tu nombre" required>
+                </div>
+                <div class="form">
+                    <label for="surname"><strong>Apellidos</strong></label>
+                    <input type="surname" id="surname" placeholder="Pon tus apellidos" required >
+                </div>
+                <div class="form">
+                    <label for=""><strong>Telefono</strong></label>
+                    <input type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{9}" title="Format (123456789)" placeholder="Pon tu télefono">
+                </div>
+                <div class="form">
+                    <label for="github-username"><strong>Github username</strong></label>
+                    <input type="text"
+                    id="github-username"
+                    name="github-username"
+                    placeholder="Con este formato (@<username>) "
+                    title="Formato (@<username>)"
+                    pattern="^@[^\s]+"
+                    required
+                    >
+                </div>
+                <fieldset class="radio-check">
+                    <div>
+                        <legend><strong>¿Como me conociste?</strong></legend>
+                        <div class="respuestas">
+                            <label for="origen">Keepcoding
+                                <input type="radio" name="origen" value="Keepcoding" >
+                            </label>
+                            <label for="origen">Colegio
+                                <input type="radio" name="origen" value="Colegio" >
+                            </label>
+                            <label for="origen">Github
+                                <input type="radio" name="origen" value="Github" >
+                            </label>
+                            <label for="origen">Otros
+                                <input type="radio" name="origen" value="Otros" >
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="elemento">
+                    <label for="bio"><strong>Más información</strong></label>
+                    <textarea name="userbio" id="bio" rows="10" maxlength="180" placeholder="Que mas quieres saber"></textarea>
+                    <label for="newsletter">
+                        <input type="checkbox" name="newsletter" value="newsletter" >
+                        Quiero recibir noticias
                     </label>
                 </div>
-            </fieldset>
-            <div class="elemento">
-                <label for="bio"><strong>Mas información</strong></label>
-                <textarea name="userbio" id="bio" rows="10" maxlength="250" placeholder="Que mas quieres saber"></textarea>
-            </div>
-            <div>
-                <button class="boton" type="submit">Enviar</button>
-                <button class="boton-reset" type="reset">Reset</button>
-            </div>
-        </form>
-    </main>
+                <div class="botones">
+                    <button class="boton btm-enviar" type="submit">Enviar</button>
+                    <button class="boton btm-reset" type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
     <footer class="footer">
-        <p>2024</p>
+        <p>José Miguel Marreror Marrero - 2024</p>
+        <div class="social">
+            <a href="https://youtube.com/" target="_blank" class="social-enlace">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-enlace">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+            </a>
+            <a href="https://x.com/" target="_blank" class="social-enlace">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+            </a>
+        </div>
     </footer>
 </div>
 </body>

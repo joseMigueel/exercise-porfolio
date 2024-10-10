@@ -1,4 +1,5 @@
 .footer {
+    width: 100%;
     text-align: center;
     font-weight: 100;
     font-style: italic;
@@ -7,8 +8,21 @@
     /*         1em  -> 16px */
     font-size: 1rem;
     background: radial-gradient(circle, rgba(229,9,20,1) 0%, #0e1b4f 70%, #000413 100%);
+    color: white;
     }
-@media screen and (width > 768px) {
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-enlace {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 768px) {
     .footer {
         background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
     }
