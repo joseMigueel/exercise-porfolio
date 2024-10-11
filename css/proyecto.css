@@ -89,50 +89,17 @@ video {
 	flex-direction: column;
 	min-height: 100vh
 }
-
-
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    padding: 10px;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-}
-
-
-#menu-toggle:checked + .hamburger + .lista {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.9);
-    padding: 10px;
-    z-index: 1;
-}
-
-
-#menu-toggle {
-    display: none;
-}
-
-
 @media (min-width: 768px) {
 	/* Video en formato horizontal para escritorio */
 	.video-container {
-	  height: auto; /* Ajuste de altura automática para que no ocupe toda la pantalla */
+		padding-top: 10px;
+	  	height: auto; /* Ajuste de altura automática para que no ocupe toda la pantalla */
+		
 	}
 
 	video {
-	  width: 100%; /* El video ocupa el 80% del ancho en pantallas grandes para alinearse con el mockup */
-	  height: 100%; /* Se ajusta la altura automáticamente */
+	  width: 70%; /* El video ocupa el 80% del ancho en pantallas grandes para alinearse con el mockup */
+	  height: auto; /* Se ajusta la altura automáticamente */
 	  min-height: 50vh; /* Limitar la altura para que se mantenga la proporción horizontal */
 	}
 
