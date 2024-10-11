@@ -71,44 +71,37 @@
         </div>
 
         <main class="cuadrado" id="contacto">
-            <form action="" >
+            <form>
                 <div class="form">
                     <label for="name"><strong>Nombre</strong></label>
-                    <input type="name" id="name" placeholder="Pon tu nombre" required>
+                    <input type="text" id="name" placeholder="Pon tu nombre" required>
                 </div>
                 <div class="form">
                     <label for="surname"><strong>Apellidos</strong></label>
-                    <input type="surname" id="surname" placeholder="Pon tus apellidos" required >
+                    <input type="text" id="surname" placeholder="Pon tus apellidos" required >
                 </div>
                 <div class="form">
-                    <label for=""><strong>Telefono</strong></label>
+                    <label for="tel"><strong>Telefono</strong></label>
                     <input type="tel" id="tel" name="phone" autocomplete="off" pattern="[0-9]{9}" title="Format (123456789)" placeholder="Pon tu télefono">
                 </div>
                 <div class="form">
                     <label for="github-username"><strong>Github username</strong></label>
-                    <input type="text"
-                    id="github-username"
-                    name="github-username"
-                    placeholder="Con este formato (@<username>) "
-                    title="Formato (@<username>)"
-                    pattern="^@[^\s]+"
-                    required
-                    >
+                    <input type="text"id="github-username" name="github-username" placeholder="Con este formato (@<username>) " title="Formato (@<username>)" pattern="^@[^\s]+" required >
                 </div>
                 <fieldset class="radio-check">
                     <div>
                         <legend><strong>¿Como me conociste?</strong></legend>
                         <div class="respuestas">
-                            <label for="origen">Keepcoding
+                            <label>Keepcoding
                                 <input type="radio" name="origen" value="Keepcoding" >
                             </label>
-                            <label for="origen">Colegio
+                            <label>Colegio
                                 <input type="radio" name="origen" value="Colegio" >
                             </label>
-                            <label for="origen">Github
+                            <label>Github
                                 <input type="radio" name="origen" value="Github" >
                             </label>
-                            <label for="origen">Otros
+                            <label>Otros
                                 <input type="radio" name="origen" value="Otros" >
                             </label>
                         </div>
