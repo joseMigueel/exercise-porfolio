@@ -7,6 +7,8 @@
 	align-items: center;
 	height: 80vh; /* El video ocupa el 80% de la altura de la pantalla para evitar que sea demasiado grande */
 	overflow: hidden;
+	margin-bottom: -186px;
+	margin-top: -100px;
 }
 
 html, body {
@@ -21,17 +23,17 @@ html, body {
 	margin-top: 100px;
 }
 video {
-	width: auto;
-	height: 80vh; /* El video se ajusta a ocupar el 80% del alto disponible en móviles */
+	width: 95%;
+	height: 43vh; 
 	max-height: 80vh;
 	max-width: 100%;
-	object-fit: cover; /* Cubre toda el área sin distorsión */
+	object-fit: cover; 
 }
 
-  /* Proyecto grid - Se muestra en una sola columna en móvil */
+ 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr; /* Una columna por defecto para móviles */
+	grid-template-columns: 1fr; 
 	gap: 1rem;
 	padding: 1rem;
 }
@@ -69,12 +71,12 @@ video {
 .btn {
 	justify-content: center;
 	display: flex;
-	padding: 0.5rem 1rem; /* px-3 py-2 equivalen a 0.5rem 1rem */
-	background-color: #60a5fa; /* bg-blue-400 */
-	margin-right: 0.25rem; /* mr-1 */
-	color: #ffffff; /* text-white */
-	font-weight: 600; /* font-semibold */
-	border-radius: 0.375rem; /* rounded */
+	padding: 0.5rem 1rem; 
+	background-color: #60a5fa; 
+	margin-right: 0.25rem;
+	color: #ffffff; 
+	font-weight: 600; 
+	border-radius: 0.375rem; 
 }
 
 .img-proyecto {
@@ -90,22 +92,23 @@ video {
 	min-height: 100vh
 }
 @media (min-width: 768px) {
-	/* Video en formato horizontal para escritorio */
+	
 	.video-container {
 		padding-top: 10px;
-	  	height: auto; /* Ajuste de altura automática para que no ocupe toda la pantalla */
+		height: auto; 
 		
 	}
 
 	video {
-	  width: 70%; /* El video ocupa el 80% del ancho en pantallas grandes para alinearse con el mockup */
-	  height: auto; /* Se ajusta la altura automáticamente */
-	  min-height: 50vh; /* Limitar la altura para que se mantenga la proporción horizontal */
+
+		width: 70%; 
+		height: auto; 
+		min-height: 50vh; 
 	}
 
-	/* Proyecto grid en múltiples columnas */
+	
 	.grid-container {
-		grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+		grid-template-columns: repeat(3, 1fr); 
 	}
 
 	.proyecto {
