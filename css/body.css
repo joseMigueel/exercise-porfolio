@@ -61,75 +61,7 @@ main {
     width: 100%;
 }
 
-.navegador {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-    padding: 10px;
-}
 
-.lista {
-    display: none;
-    margin-top: 10px;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-}
-
-.header {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: relative;
-}
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    padding: 10px;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-}
-
-
-#menu-toggle:checked + .hamburger + .lista {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.9);
-    padding: 10px;
-    z-index: 1;
-}
-
-
-#menu-toggle {
-    display: none;
-}
-
-.lista li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    border-radius: 5px;
-}
-
-.imagen {
-    width: 120px;
-}
 
 @media (min-width: 768px) {
     .todo {
