@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 html, body {
     font-family:var(--font-family); 
     background: var(--body-color);
@@ -9,25 +8,21 @@ html, body {
     box-sizing: border-box;
     width: 100%;
 }
-
 .todo {
     display: flex;
     width: 100%;
     flex-direction: column;
     min-height: 100vh;
 }
-
 main {
     flex: 1;
 }
-
 .contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .container-img {
     display: flex;
     width: 100%;
@@ -37,45 +32,32 @@ main {
     background-size: cover;
     background-image: url(/imagenes/do-python-sql-html-css-and-javascript-programming-projects.png)
 }
-
-
-
 .habilidades {
     padding: 10px;
 }
-
 .skills {
     text-align: left;
     padding-left: 10px;
 }
-
 .form {
     margin-bottom: 15px;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
-
-
 @media (min-width: 768px) {
     .todo {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .contenido {
         width: 100%;
         max-width: 1200px;
     }
-
     footer {
         bottom: 0;
     }
-
-    
-
     .container-img {
         background-image:url(../imagenes/imagen.png);
         width: 82%;

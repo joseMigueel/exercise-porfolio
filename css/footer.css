@@ -10,18 +10,15 @@
     background: var(--footer-color);
     color: var(--footer-enlace-color);
     }
-
 .social{
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-
 .social-enlace {
     text-decoration: none;
     color: var(--footer-enlace-color);
 }
-
 @media (min-width: 768px) {
     .footer {
         background: var(--footer-background);
