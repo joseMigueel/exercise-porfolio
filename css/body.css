@@ -3,8 +3,8 @@
 }
 
 html, body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(243 244 246);
+    font-family:var(--font-family); 
+    background: linear-gradient(180deg, #ffffff, #e0eafc);
     margin: 0;
     box-sizing: border-box;
     width: 100%;
@@ -74,28 +74,7 @@ main {
         bottom: 0;
     }
 
-    .navegador {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .lista {
-        display: flex;
-        margin-top: 0px;
-        flex-direction: row;
-        gap: 10px;
-        margin-left: auto;
-    }
-
-    .imagen {
-        width: 120px;
-        margin-bottom: 10px;
-    }
+    
 
     .container-img {
         background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/tips-stock-image-acceptance/jcr%3Acontent/main-pars/image_733509258/tips-stock-acceptance_1.jpg.img.jpg");

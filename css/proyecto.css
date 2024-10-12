@@ -59,13 +59,16 @@ video {
 	border-radius: 5px;
 }
 .tag-html {
-	background-color: orange;
+	background: linear-gradient(90deg, #E34F26 50%, #FFFFFF 50%);
 }
 .tag-css {
-	background-color: blue;
+	background: linear-gradient(90deg, #1572B6 50%, #FFFFFF 50%);
 }
 .tag-js {
-	background-color: yellow;
+	background: linear-gradient(90deg, #F7DF1E 50%, #339933 50%);	
+}
+.tag-python {
+	background: linear-gradient(90deg, #306998 50%, #FFD43B 50%);
 }
 
 .btn {
@@ -82,7 +85,8 @@ video {
 .img-proyecto {
 	margin-top: -50px;
 	border-radius: 10px;
-	width: 80%;
+	width: 60%;
+	height: 34vw;
 }
 
 .todo{
@@ -96,23 +100,29 @@ video {
 	.video-container {
 		padding-top: 10px;
 		height: auto; 
-		
+		padding-bottom: 53px;
 	}
 
 	video {
-
 		width: 70%; 
-		height: auto; 
-		min-height: 50vh; 
+		min-height: 50vh;
+		padding-top: 105px;
+		margin-bottom: 125px;
 	}
-
-	
+	.img-proyecto{
+		border-radius: 10px;
+		width: 76%;
+		height: 9vw;
+	}
 	.grid-container {
-		grid-template-columns: repeat(3, 1fr); 
+		grid-template-columns: repeat(3, 1fr);
+		gap: 23px;
 	}
-
 	.proyecto {
 		font-size: 1.5rem;
+		width: 100%;
+		margin-bottom: 23px;
+		border: 1px solid black;
 	}
 	.navegador {
         flex-direction: row;
@@ -131,6 +141,13 @@ video {
         gap: 10px;
         margin-left: auto;
     }
+	.btn {
+		justify-content: center;
+		width: 50%;
+		align-items: center;
+		margin-left: 125px;
+		text-decoration: none;
+	}
 
     .imagen {
         width: 120px;

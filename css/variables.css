@@ -1,0 +1,9 @@
+:root {
+    --header-color: white; 
+    --header-enlace: #ff5733;
+    --enlace-imagen: #ff5733 ;
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --body-color: rgb(243 244 246);
+    --footer-color: linear-gradient(90deg, #2b5876, #4e4376);
+    --footer-background:linear-gradient(90deg, #2b5876, #4e4376);
+}
