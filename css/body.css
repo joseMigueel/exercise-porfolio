@@ -4,7 +4,7 @@
 
 html, body {
     font-family:var(--font-family); 
-    background: linear-gradient(180deg, #ffffff, #e0eafc);
+    background: var(--body-color);
     margin: 0;
     box-sizing: border-box;
     width: 100%;
@@ -35,7 +35,7 @@ main {
     align-items: center;
     min-height: 300px;
     background-size: cover;
-    background-image: url(../imagenes/do-python-sql-html-css-and-javascript-programming-projects.png)
+    background-image: url(/imagenes/do-python-sql-html-css-and-javascript-programming-projects.png)
 }
 
 

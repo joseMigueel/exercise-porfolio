@@ -6,4 +6,9 @@
     --body-color: rgb(243 244 246);
     --footer-color: linear-gradient(90deg, #2b5876, #4e4376);
     --footer-background:linear-gradient(90deg, #2b5876, #4e4376);
+    --body-color: linear-gradient(180deg, #ffffff, #e0eafc);
+    --footer-enlace-color:white;
+    --contenedor-color-skills:#dddada;
+    --skilss-color:white;
+    --btn-form: aqua;
 }
