@@ -30,7 +30,7 @@ main {
     align-items: center;
     min-height: 300px;
     background-size: cover;
-    background-image: url(/imagenes/do-python-sql-html-css-and-javascript-programming-projects.png)
+    background-image: url(../imagenes/do-python-sql-html-css-and-javascript-programming-projects.png)
 }
 .habilidades {
     padding: 10px;
@@ -44,6 +44,11 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+.sobre-mi{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1rem 0;
 }
 @media (min-width: 768px) {
     .todo {
@@ -61,5 +66,10 @@ main {
     .container-img {
         background-image:url(../imagenes/imagen.png);
         width: 82%;
+    }
+    .sobre-mi{
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 2rem 0;
     }
 }

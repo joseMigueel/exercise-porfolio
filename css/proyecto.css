@@ -109,7 +109,6 @@ video {
 	
 	.video-container {
 		padding-top: 10px;
-		height: auto; 
 		padding-bottom: 53px;
 	}
 	.titulo{
@@ -122,9 +121,7 @@ video {
 	}
 	video {
 		width: 56%; 
-		min-height: 59vh;
-		padding-top: 110px;
-		margin-bottom: 36vh;
+		min-height: 41vh;
 		margin-top: -7vh;
 		animation: fadein 2s ease-in forwards;
 		height: 50vh;
@@ -183,5 +180,6 @@ video {
 		width: 92%;
 		padding-left: 23vh;
 		padding-right: 8vh;
+		margin-top: 17vh;
 	}
 }

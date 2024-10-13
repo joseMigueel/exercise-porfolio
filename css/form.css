@@ -106,4 +106,15 @@ textarea {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .btm-enviar {
+        background-color: var(--btn-form);
+        border: none;
+        cursor: pointer;
+    }
+    .btm-reset{
+        background-color: transparent;
+        border: 1px solid aqua;
+        cursor: pointer;
+    }
 }
