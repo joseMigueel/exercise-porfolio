@@ -15,7 +15,7 @@
 }
 .header {
     width: 100%;
-    background: linear-gradient(90deg, #2c3e50, #4b79a1);
+    background: var(--header-nav);
     padding: 1px;
     position: relative;
     color: var(--header-color);
@@ -85,7 +85,7 @@
     }
     .header{
         width: 100%;
-        background: linear-gradient(90deg, #2c3e50, #4b79a1);
+        background: var(--header-nav);
         padding: 10px;
         color: var(--header-color);
         height: 11vh;
