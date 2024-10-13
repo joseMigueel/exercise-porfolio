@@ -1,7 +1,7 @@
 # ** Jose Miguel Marrero Marrero - Portafolio Personal **
 
 ## ¡Bienvenido a mi espacio creativo! 
-SSoy Jose Miguel, un apasionado por el desarrolo web. Este portafolio es una muestra de mis proyectos y habilidades, cuidadosamente seleccionados para reflejar mi crecimiento profesional y mi visión creativa.
+Soy Jose Miguel, un apasionado por el desarrolo web. Este portafolio es una muestra de mis proyectos y habilidades, cuidadosamente seleccionados para reflejar mi crecimiento profesional y mi visión creativa.
 
 ##  Sobre este portafolio
 Este portafolio ha sido desarrollado utilizando Tecnologías HTML y CSS. El objetivo principal es mostrar de forma clara y concisa mis proyectos más destacados, así como mis habilidades técnicas y de diseño.
